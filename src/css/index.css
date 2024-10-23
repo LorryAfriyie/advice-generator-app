@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+
+  /* Neutral Colors */
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-dark-blue: hsl(218, 23%, 16%);
+
+  /* Font Size */
+  --font-size-quote: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--clr-dark-blue);
+}
