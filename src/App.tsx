@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Card } from "./assets/components/card";
 
 import "./css/App.css";
@@ -13,9 +14,29 @@ function App() {
 }
 
 function AdviceGenerator() {
+  const [advice, getAdvice] = useState([]);
+
+  function getAdviceData() {
+    fetch("https://api.adviceslip.com/advice")
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (res) {
+        getAdvice(res);
+      })
+      .catch(function (err) {
+        console.log(err.message);
+      });
+  }
+
+  useEffect(() => {
+    getAdviceData();
+  }, []);
+
   return (
     <div className="advice-gen-container">
-      <h1>Advice generator section</h1>
+      {advice.slip && <p>{advice.slip.advice}</p>}
+      <button onClick={getAdviceData}>Get Advice</button>
     </div>
   );
 }
