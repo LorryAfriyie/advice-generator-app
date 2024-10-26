@@ -1,0 +1,15 @@
+.button {
+    background: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 1em;
+    z-index: 99;
+    position: relative;
+}
+
+.button:hover {
+    box-shadow: 0 5px 35px hsl(150, 100%, 66%);
+}
+
+/*svg > path {*/
+/*  fill: var(--clr-neon-green);*/
+/*}*/

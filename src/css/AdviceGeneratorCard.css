@@ -1,0 +1,28 @@
+.advice-generator-card {
+  max-width: 700px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 40em) {
+  .advice-generator-card {
+    width: 700px;
+  }
+}
+
+.advice-generator-card > small {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--clr-neon-green);
+}
+
+.advice-generator-card > .advice {
+  color: var(--clr-light-cyan);
+  font-size: var(--font-size-quote);
+  font-weight: 600;
+}
