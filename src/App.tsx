@@ -46,7 +46,11 @@ function AdviceGenerator() {
         {advice.slip && (
           <>
             <small className={"text-center"}>Advice #{advice.slip.id}</small>
-            <p className={"text-center justify-items-center advice"}>
+            <p
+              className={
+                "text-center justify-items-center advice mb-8 mt-6 pl-6 pr-6"
+              }
+            >
               "{advice.slip.advice}"
             </p>
           </>

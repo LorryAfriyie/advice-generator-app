@@ -1,6 +1,6 @@
 .advice-generator-card {
-  max-width: 700px;
-  height: 300px;
+  max-width: 550px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 40em) {
   .advice-generator-card {
-    width: 700px;
+    width: 550px;
   }
 }
 
