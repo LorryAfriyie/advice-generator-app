@@ -31,9 +31,3 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: var(--clr-dark-blue);
 }
-
-@media screen and (max-width: 40em) {
-  body {
-    /*padding: 0 0.5rem 0 0.5rem;*/
-  }
-}
